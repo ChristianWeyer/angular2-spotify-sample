@@ -1,7 +1,7 @@
 <label for="search">Search for an artist: </label>
 <input id="search" class="form-control" #searchvalue (keyup)="searchArtist($event, searchvalue)"/>
 
-<div *ng-if="artists.length > 0">
+<section *ng-if="artists">
     <h4>Results</h4>
     <ul>
         <li *ng-for="#artist of artists">
@@ -9,4 +9,4 @@
             <a [router-link]="['/artist', {id: artist.id}]">More...</a>
         </li>
     </ul>
-</div>
+</section>

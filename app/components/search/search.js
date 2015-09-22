@@ -43,7 +43,7 @@ var SearchComponent = (function () {
             selector: 'search'
         }),
         angular2_1.View({
-            directives: [angular2_1.NgFor, router_1.RouterLink],
+            directives: [angular2_1.NgFor, angular2_1.NgIf, router_1.RouterLink],
             templateUrl: 'app/components/search/search.html'
         }), 
         __metadata('design:paramtypes', [spotify_1.SpotifyService])

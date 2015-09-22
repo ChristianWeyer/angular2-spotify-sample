@@ -1,6 +1,6 @@
 /// <reference path="../../../typings/_custom.d.ts" />
 
-import { Component, View, NgFor, Inject } from 'angular2/angular2';
+import { Component, View, NgFor, NgIf, Inject } from 'angular2/angular2';
 import { RouterLink, RouteParams } from 'angular2/router';
 
 import { SpotifyService } from '../../services/spotify';
@@ -10,7 +10,7 @@ import { status, json } from '../../utils/fetch'
 	selector: 'search'
 })
 @View({
-	directives: [NgFor, RouterLink],
+	directives: [NgFor, NgIf, RouterLink],
 	templateUrl: 'app/components/search/search.html'
 })
 export class SearchComponent {

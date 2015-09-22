@@ -23,13 +23,13 @@ var AppComponent = (function () {
             selector: 'spotify-app'
         }),
         angular2_1.View({
-            directives: [router_1.RouterLink, router_1.RouterOutlet],
+            directives: [router_1.RouterOutlet],
             templateUrl: 'app/components/app/app.html'
         }),
         router_1.RouteConfig([
-            { path: '/', redirectTo: '/search' },
             { path: '/search', as: 'search', component: search_1.SearchComponent },
-            { path: '/artist/:id', as: 'artist', component: artist_1.ArtistComponent }
+            { path: '/artist/:id', as: 'artist', component: artist_1.ArtistComponent },
+            { path: '/', redirectTo: '/search' }
         ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

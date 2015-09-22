@@ -1,7 +1,7 @@
 /// <reference path="../../../typings/_custom.d.ts" />
 
 import { Component, View, NgIf } from 'angular2/angular2';
-import { RouterLink, RouteParams } from 'angular2/router';
+import { RouteParams } from 'angular2/router';
 
 import { SpotifyService } from '../../services/spotify';
 import { status, json } from '../../utils/fetch'
