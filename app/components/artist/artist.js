@@ -32,8 +32,7 @@ var ArtistComponent = (function () {
     };
     ArtistComponent = __decorate([
         angular2_1.Component({
-            selector: 'artist',
-            viewInjector: [spotify_1.SpotifyService]
+            selector: 'artist'
         }),
         angular2_1.View({
             directives: [angular2_1.NgIf],

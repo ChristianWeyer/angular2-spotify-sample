@@ -7,8 +7,7 @@ import { SpotifyService } from '../../services/spotify';
 import { status, json } from '../../utils/fetch'
 
 @Component({
-	selector: 'search',
-	viewInjector: [SpotifyService]
+	selector: 'search'
 })
 @View({
 	directives: [NgFor, RouterLink],

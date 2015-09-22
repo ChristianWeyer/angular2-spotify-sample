@@ -7,8 +7,7 @@ import { SpotifyService } from '../../services/spotify';
 import { status, json } from '../../utils/fetch'
 
 @Component({
-	selector: 'artist',
-	viewInjector: [SpotifyService]
+	selector: 'artist'
 })
 @View({
 	directives: [NgIf],

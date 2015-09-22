@@ -40,8 +40,7 @@ var SearchComponent = (function () {
     };
     SearchComponent = __decorate([
         angular2_1.Component({
-            selector: 'search',
-            viewInjector: [spotify_1.SpotifyService]
+            selector: 'search'
         }),
         angular2_1.View({
             directives: [angular2_1.NgFor, router_1.RouterLink],
