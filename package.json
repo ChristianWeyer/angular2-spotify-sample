@@ -1,0 +1,13 @@
+{
+  "name": "spotify-finder",
+  "version": "0.0.1",
+  "dependencies": {
+    "admin-lte": "^2.3.0",
+    "angular2": "2.0.0-alpha.35",
+    "es6-module-loader": "^0.16",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "systemjs": "^0.16",
+    "traceur": "0.0.91"
+  }
+}

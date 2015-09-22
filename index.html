@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>My Spotify</title>
+
+    <link rel="stylesheet" href="node_modules/admin-lte/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/admin-lte/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="node_modules/admin-lte/dist/css/skins/skin-blue.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+</head>
+<body class="skin-blue sidebar-mini">
+<div class="wrapper">
+    <header class="main-header">
+        <a href="#" class="logo">
+            <span class="logo-mini"><b>My</b>S</span>
+            <span class="logo-lg"><b>My</b>Spotify</span>
+        </a>
+
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+        </nav>
+    </header>
+
+    <aside class="main-sidebar">
+        <ul class="sidebar-menu">
+            <li class="header">Navigation</li>
+            <li class="active treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="#/search"><i class="fa fa-circle-o"></i> Search</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Favorites</a></li>
+                </ul>
+            </li>
+        </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                Enjoy your music.
+            </h1>
+        </section>
+
+        <spotify-app></spotify-app>
+    </div>
+
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2015 <a href="http://www.google.com">Dehemm</a>.</strong>
+    </footer>
+</div>
+
+<script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+<script src="node_modules/es6-module-loader/dist/es6-module-loader.js"></script>
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="node_modules/angular2/bundles/router.dev.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/admin-lte/dist/js/app.js" ></script>
+<script src="node_modules/admin-lte/bootstrap/js/bootstrap.js" ></script>
+
+<script>
+    System.config({
+        baseURL: '/app'
+    });
+
+    System.import('bootstrap');
+</script>
+</body>
+</html>

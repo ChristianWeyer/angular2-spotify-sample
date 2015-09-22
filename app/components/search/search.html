@@ -1,0 +1,10 @@
+<label for="search">Search for an artist: </label>
+<input id="search" class="form-control" #searchvalue (keyup)="searchArtist($event, searchvalue)"/>
+
+<h4>Results</h4>
+<ul>
+    <li *ng-for="#artist of artists">
+        <h3>{{artist.name}}</h3>
+        <a [router-link]="['/artist', {id: artist.id}]">More...</a>
+    </li>
+</ul>
